@@ -1,7 +1,8 @@
 package phoenixm103.demoBusiness.target;
 
-public interface ITarget {
+public interface ECTarget {
 	
 	public String getInfoByNid();
-	public void getInfoByMobile();
+	
+
 }

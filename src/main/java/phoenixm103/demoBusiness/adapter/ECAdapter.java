@@ -2,32 +2,29 @@ package phoenixm103.demoBusiness.adapter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import phoenixm103.demoBusiness.adaptee.Adaptee;
-import phoenixm103.demoBusiness.target.ITarget;
+import phoenixm103.demoBusiness.adaptee.ECAdaptee;
+import phoenixm103.demoBusiness.target.ECTarget;
 
-public class Adapter implements ITarget{
+public class ECAdapter implements ECTarget{
 	
 	@Autowired
-	private Adaptee adaptee;
+	private ECAdaptee adaptee;
 	
 
 	
 	
-	public Adapter(Adaptee adaptee) {
+	public ECAdapter(ECAdaptee adaptee) {
 		this.adaptee=adaptee;	
 	}
 
 	@Override
 	public String getInfoByNid() {
 		// TODO Auto-generated method stub
+	
 		return adaptee.getSpecificInfoByNid();
 		
 	}
 
-	@Override
-	public void getInfoByMobile() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 }

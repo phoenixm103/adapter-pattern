@@ -14,10 +14,20 @@ public class BusinessController {
 	@Autowired
 	private BusinessLogic businessLogic;
 	
-	@RequestMapping(method=RequestMethod.GET, value = "/tests")
+	//interects with demoEC project
+	@RequestMapping(method=RequestMethod.GET, value = "/ecinfo")
 	public String getInfoByNid() {
 		return businessLogic.getInfoByNid();
 		
 	}
+	
+	//interects with demoMicroservice project
+	@RequestMapping(method=RequestMethod.GET, value = "/hometown")
+	public String getHomeTown() {
+		return businessLogic.getHomeTown();
+		
+	}
+	
+	
 	
 }

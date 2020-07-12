@@ -4,7 +4,7 @@ import org.springframework.web.client.RestTemplate;
 
 import phoenixm103.demoBusiness.ecmessage.ECMessage;
 
-public class Adaptee {
+public class ECAdaptee {
 	
 	
 
@@ -17,4 +17,6 @@ public class Adaptee {
 		
 		return eCMessage.getMessage();
 	}
+	
+
 }
