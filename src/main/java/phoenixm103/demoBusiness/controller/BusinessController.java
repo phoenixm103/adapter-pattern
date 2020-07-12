@@ -21,10 +21,17 @@ public class BusinessController {
 		
 	}
 	
-	//interects with demoMicroservice project
+	//interects with demoCustomerInfo project
 	@RequestMapping(method=RequestMethod.GET, value = "/hometown")
 	public String getHomeTown() {
 		return businessLogic.getHomeTown();
+		
+	}
+	@RequestMapping(method=RequestMethod.GET, value = "/publishmessages")
+	public void publishMessage(String message) {
+		//System.out.println(message);
+		message="moin";
+		businessLogic.publishMessage(message);
 		
 	}
 	
